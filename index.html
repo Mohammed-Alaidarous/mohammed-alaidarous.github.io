@@ -35,6 +35,7 @@
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Taif University" },
   "address": { "@type": "PostalAddress", "addressLocality": "Riyadh", "addressCountry": "SA" },
   "email": "mailto:eng.mohammed.s.a@outlook.com",
+  "telephone": "+966552408899",
   "sameAs": ["https://www.linkedin.com/in/mohammed-alaidarous97"],
   "knowsAbout": ["Maintenance Management", "Preventive Maintenance", "Commissioning", "After-Sales Service", "Service Level Agreements", "Root Cause Analysis", "Spare Parts Management", "Project Management"]
 }
@@ -239,7 +240,7 @@ h3 { margin: 0; font-size: 1.0625rem; font-weight: 600; line-height: 1.5; text-w
     <h1>Mohammed Salem Alaidarous</h1>
     <p>Lead, Engineering Support at Camel Step, Riyadh. Maintenance &amp; Reliability | After-Sales Operations.</p>
     <p>Targeting Maintenance Manager or Maintenance Team Lead roles in facilities or after-sales service.</p>
-    <p>Email: <a href="mailto:eng.mohammed.s.a@outlook.com">eng.mohammed.s.a@outlook.com</a> · <a href="https://www.linkedin.com/in/mohammed-alaidarous97">LinkedIn</a> · <a href="cv.pdf">CV (PDF)</a></p>
+    <p>Email: <a href="mailto:eng.mohammed.s.a@outlook.com">eng.mohammed.s.a@outlook.com</a> · Phone: <a href="tel:+966552408899">+966 55 240 8899</a> ·<a href="https://www.linkedin.com/in/mohammed-alaidarous97">LinkedIn</a> · <a href="cv.pdf">CV (PDF)</a></p>
   </div>
 </noscript>
 
@@ -260,6 +261,10 @@ const CONTENT = {
   photo: 'photo.jpg',
   cvFile: 'cv.pdf',
   email: 'eng.mohammed.s.a@outlook.com',
+  // الجوال: phone للاتصال، phoneDisplay لطريقة العرض، whatsapp بدون + (احذف السطر لإخفاء زر واتساب).
+  phone: '+966552408899',
+  phoneDisplay: '+966 55 240 8899',
+  whatsapp: '966552408899',
   linkedin: 'https://www.linkedin.com/in/mohammed-alaidarous97',
 
   // صور مشروع المحامص: الملف بجانب index.html ووصف قصير بكل لغة.
@@ -340,7 +345,7 @@ const CONTENT = {
       { code: 'CMRP', name: 'Certified Maintenance & Reliability Professional', issuer: 'The Society for Maintenance & Reliability Professionals (SMRP)', date: 'يوليو 2025' },
       { code: 'BSc', name: 'بكالوريوس في الهندسة الكهربائية', issuer: 'جامعة الطائف، معدل 3.77 من 4، مرتبة الشرف الأولى', date: '2017 – 2021' },
     ],
-    contactNote: 'أبحث عن دور مدير صيانة أو قائد فريق صيانة في المرافق أو خدمات ما بعد البيع. يسعدني التواصل عبر البريد أو LinkedIn.',
+    contactNote: 'أبحث عن دور مدير صيانة أو قائد فريق صيانة في المرافق أو خدمات ما بعد البيع. يسعدني التواصل عبر البريد أو الجوال أو LinkedIn.',
   },
 
   en: {
@@ -415,7 +420,7 @@ const CONTENT = {
       { code: 'CMRP', name: 'Certified Maintenance & Reliability Professional', issuer: 'The Society for Maintenance & Reliability Professionals (SMRP)', date: 'Jul 2025' },
       { code: 'BSc', name: 'BSc in Electrical Engineering', issuer: 'Taif University, GPA 3.77 out of 4, First Honors', date: '2017 – 2021' },
     ],
-    contactNote: 'I am looking for a Maintenance Manager or Maintenance Team Lead role in facilities or after-sales service. Feel free to reach me by email or LinkedIn.',
+    contactNote: 'I am looking for a Maintenance Manager or Maintenance Team Lead role in facilities or after-sales service. Feel free to reach me by email, phone or LinkedIn.',
   },
 };
 
@@ -423,7 +428,7 @@ const CONTENT = {
 const UI = {
   ar: { dir: 'rtl', other: 'English', skip: 'تخطَّ إلى المحتوى', menu: 'القائمة', navLabel: 'أقسام الصفحة',
         nav: { results: 'النتائج', experience: 'الخبرة', projects: 'المشاريع', skills: 'المهارات', credentials: 'الشهادات', contact: 'التواصل' },
-        cv: 'تنزيل السيرة الذاتية', linkedin: 'ملف LinkedIn', contactBtn: 'تواصل معي', copy: 'نسخ البريد', copied: 'تم نسخ البريد.', copyFail: 'حدد البريد وانسخه يدويًا.',
+        cv: 'تنزيل السيرة الذاتية', linkedin: 'ملف LinkedIn', contactBtn: 'تواصل معي', whatsapp: 'راسلني على واتساب', copy: 'نسخ البريد', copied: 'تم نسخ البريد.', copyFail: 'حدد البريد وانسخه يدويًا.',
         seeking: 'أستهدف:',
         results: 'أبرز النتائج', resultsNote: 'أرقام من عملي في Camel Step.',
         experience: 'الخبرة المهنية', experienceNote: 'من هندسة المشاريع الكهربائية إلى قيادة الدعم الهندسي وما بعد البيع.',
@@ -432,7 +437,7 @@ const UI = {
         confirm: 'يحتاج تأكيد', review: 'وضع المراجعة: العلامات الصفراء تحدد ما يحتاج تأكيدك. لا تظهر هذه العلامات على github.io.' },
   en: { dir: 'ltr', other: 'العربية', skip: 'Skip to content', menu: 'Menu', navLabel: 'Page sections',
         nav: { results: 'Results', experience: 'Experience', projects: 'Projects', skills: 'Skills', credentials: 'Certifications', contact: 'Contact' },
-        cv: 'Download CV', linkedin: 'LinkedIn Profile', contactBtn: 'Contact Me', copy: 'Copy email', copied: 'Email copied.', copyFail: 'Select the email and copy it manually.',
+        cv: 'Download CV', linkedin: 'LinkedIn Profile', contactBtn: 'Contact Me', whatsapp: 'Message on WhatsApp', copy: 'Copy email', copied: 'Email copied.', copyFail: 'Select the email and copy it manually.',
         seeking: 'Looking for:',
         results: 'Key Results', resultsNote: 'Figures from my work at Camel Step.',
         experience: 'Professional Experience', experienceNote: 'From electrical project engineering to leading engineering support and after-sales.',
@@ -531,6 +536,8 @@ function render(lang) {
   section('contact', c.contactNote, `<div class="contact-row"><a class="email" id="email" href="mailto:${esc(CONTENT.email)}" dir="ltr">${esc(CONTENT.email)}</a>
       <button class="btn" id="copy" type="button">${u.copy}</button></div>
     <p class="status" id="status" role="status"></p>
+    ${CONTENT.phone ? `<div class="contact-row"><a class="email" href="tel:${esc(CONTENT.phone)}" dir="ltr">${esc(CONTENT.phoneDisplay || CONTENT.phone)}</a>
+      ${CONTENT.whatsapp ? `<a class="btn" href="https://wa.me/${esc(CONTENT.whatsapp)}" target="_blank" rel="noopener">${u.whatsapp}</a>` : ''}</div>` : ''}
     <div class="actions">${links}</div>`);
   $('copy').addEventListener('click', () => {
     const fail = () => {
